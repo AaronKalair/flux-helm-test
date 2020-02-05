@@ -4,6 +4,9 @@ metadata:
   name: "Hello World"
 spec:
   replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: helloworld
   template:
     spec:
       containers:
