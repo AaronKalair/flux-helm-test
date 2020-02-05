@@ -5,8 +5,9 @@ metadata:
   name: helloworld
   namespace: prod
   annotations:
-    flux.weave.works/automated: "true"
-    flux.weave.works/tag.hello: "glob:our-build-tag-*-deployme"
+    fluxcd.io/automated: "true"
+    # https://docs.fluxcd.io/en/1.17.1/references/helm-operator-integration.html#filters
+    filter.fluxcd.io/chart-image: glob:our-build-tag-*-deployme
 spec:
   releaseName: prod-app
   chart:
