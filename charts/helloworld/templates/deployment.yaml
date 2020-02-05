@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: HelloWorld
+  name: helloworld
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -10,7 +10,7 @@ spec:
   template:
     spec:
       containers:
-        - name: Hello
+        - name: hello
           image: {{ .Values.image }}
           imagePullPolicy: IfNotPresent
           env:
