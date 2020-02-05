@@ -16,5 +16,5 @@ spec:
     ref: master
   values:
     replicaCount: 2
-    image: aaronkalair/helm-hello-world:our-build-tag-v5-deployme
+    image: aaronkalair/helm-hello-world:our-build-tag-v9-deployme
     model_version: hij
