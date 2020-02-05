@@ -6,7 +6,7 @@ metadata:
   namespace: prod
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag: "glob:our-build-tag-*-deployme"
+    flux.weave.works/tag.hello: "glob:our-build-tag-*-deployme"
 spec:
   releaseName: prod-app
   chart:
