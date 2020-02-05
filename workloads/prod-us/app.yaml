@@ -9,7 +9,7 @@ metadata:
 spec:
   releaseName: prod-app
   chart:
-    git: git@github.com:AaronKalair/flux-helm-test.git
+    git: https://github.com/AaronKalair/flux-helm-test.git
     path: charts/helloworld
     ref: master
   values:
