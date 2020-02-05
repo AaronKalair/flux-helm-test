@@ -1,0 +1,17 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: prod-app
+  namespace: prod
+  annotations:
+    flux.weave.works/automated: "true"
+spec:
+  releaseName: prod-app
+  chart:
+    git: git@github.com:AaronKalair/flux-helm-test.git
+    path: charts/helloworld
+    ref: master
+  values:
+    replicaCount: 1
+    image: aaronkalair/helm-hello-world:our-build-tag-deployme
