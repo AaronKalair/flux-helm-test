@@ -14,5 +14,6 @@ spec:
     path: charts/helloworld
     ref: master
   values:
-    replicaCount: 1
-    image: aaronkalair/helm-hello-world:our-build-tag-deployme
+    replicaCount: 2
+    image: aaronkalair/helm-hello-world:our-build-tag-v1-deployme
+    model_version: abc

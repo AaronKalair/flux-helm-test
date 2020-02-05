@@ -1,3 +1,1 @@
 replicaCount: 1
-image: aaronkalair/helm-hello-world:our-build-tag-deployme
-model_version: abc
