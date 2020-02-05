@@ -6,6 +6,7 @@ metadata:
   namespace: prod
   annotations:
     flux.weave.works/automated: "true"
+    flux.weave.works/tag: "glob:our-build-tag-*-deployme"
 spec:
   releaseName: prod-app
   chart:
@@ -14,4 +15,4 @@ spec:
     ref: master
   values:
     replicaCount: 1
-    image: aaronkalair/helm-hello-world:our-build-tag-deployme
+    image: aaronkalair/helm-hello-world:our-build-tag-v1-deployme
