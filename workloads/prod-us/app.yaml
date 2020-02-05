@@ -15,5 +15,5 @@ spec:
     ref: master
   values:
     replicaCount: 2
-    image: aaronkalair/helm-hello-world:our-build-tag-deployme
+    image: aaronkalair/helm-hello-world:our-build-tag-v2
     model_version: abc
