@@ -2,7 +2,7 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: prod-app
+  name: helloworld
   namespace: prod
   annotations:
     flux.weave.works/automated: "true"
