@@ -15,4 +15,4 @@ spec:
     ref: master
   values:
     replicaCount: 1
-    image: aaronkalair/helm-hello-world:our-build-tag-v1-deployme
+    image: aaronkalair/helm-hello-world:our-build-tag-deployme
